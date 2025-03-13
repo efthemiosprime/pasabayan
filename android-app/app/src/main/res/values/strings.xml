@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Pasabayan</string>
+    
+    <!-- Bottom navigation -->
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_trips">Trips</string>
+    <string name="bottom_nav_profile">Profile</string>
+    
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Connect with Travelers</string>
+    <string name="onboarding_desc_1">Find travelers headed to your package\'s destination</string>
+    <string name="onboarding_title_2">Send Packages Easily</string>
+    <string name="onboarding_desc_2">Create delivery requests for your packages</string>
+    <string name="onboarding_title_3">Track Your Packages</string>
+    <string name="onboarding_desc_3">Know your package\'s location in real-time</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    
+    <!-- Authentication -->
+    <string name="login">Log In</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="already_have_account">Already have an account? Log In</string>
+    <string name="error_email_empty">Email cannot be empty</string>
+    <string name="error_email_invalid">Invalid email format</string>
+    <string name="error_password_empty">Password cannot be empty</string>
+    <string name="error_password_length">Password must be at least 6 characters</string>
+    <string name="error_passwords_dont_match">Passwords do not match</string>
+    <string name="error_name_empty">Name cannot be empty</string>
+    <string name="error_phone_empty">Phone number cannot be empty</string>
+    <string name="login_successful">Login successful</string>
+    <string name="registration_successful">Registration successful</string>
+    
+    <!-- Role selection -->
+    <string name="select_role">I want to...</string>
+    <string name="role_sender">Send Packages</string>
+    <string name="role_traveler">Deliver Packages</string>
+    <string name="role_both">Both</string>
+    
+    <!-- Home -->
+    <string name="welcome_user">Welcome, %1$s</string>
+    <string name="recent_activity">Recent Activity</string>
+    <string name="no_recent_activity">No recent activity</string>
+    <string name="my_requests">My Requests</string>
+    <string name="my_trips">My Trips</string>
+    <string name="create_request">Create Request</string>
+    <string name="create_trip">Create Trip</string>
+    <string name="view_all">View All</string>
+    
+    <!-- Delivery Request -->
+    <string name="new_delivery_request">New Delivery Request</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="dropoff_location">Dropoff Location</string>
+    <string name="package_description">Package Description</string>
+    <string name="package_size">Package Size</string>
+    <string name="package_size_small">Small</string>
+    <string name="package_size_medium">Medium</string>
+    <string name="package_size_large">Large</string>
+    <string name="package_weight">Package Weight (kg)</string>
+    <string name="package_value">Package Value (PHP)</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="offer_price">Offer Price (PHP)</string>
+    <string name="special_instructions">Special Instructions</string>
+</resources>

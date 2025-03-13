@@ -1,0 +1,19 @@
+php artisan tinker --execute="
+$user = \App\Models\User::where('email', 'bongbox@gmail.com')->first();
+$trip = \App\Models\Trip::where('id', 2)->first();
+$request = new \App\Models\DeliveryRequest();
+$request->trip_id = $trip->id;
+$request->sender_id = $user->id;
+$request->package_description = 'Sample Package - Books and Electronics';
+$request->pickup_location = '123 Main St, Manila';
+$request->dropoff_location = '456 Oak Ave, Cebu';
+$request->package_size = 'medium';
+$request->package_weight = 2.5;
+$request->urgency = 'medium';
+$request->delivery_date = now()->addDays(4)->format('Y-m-d H:i:s');
+$request->special_instructions = 'Please handle with care, fragile items inside';
+$request->status = 'pending';
+$request->estimated_cost = 500;
+$request->save();
+echo 'Created request ID: '.$request->id;
+"
