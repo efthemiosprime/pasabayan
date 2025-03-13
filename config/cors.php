@@ -16,7 +16,7 @@ return [
 
     'allowed_methods' => ['*'], // Allow all HTTP methods (GET, POST, PUT, DELETE, OPTIONS)
 
-    'allowed_origins' => ['https://pasabayan.com', 'https://www.pasabayan.com'], // Allow frontend domain
+    'allowed_origins' => ['*'], // Allow frontend domain
 
     'allowed_origins_patterns' => [],
 
