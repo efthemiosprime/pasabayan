@@ -20,7 +20,7 @@ return [
 
     'allowed_origins_patterns' => [],
 
-    'allowed_headers' => ['Content-Type', 'X-Requested-With', 'Authorization', 'Accept', 'Origin'], // ✅ Ensure Content-Type is allowed
+    'allowed_headers' => ['*'], // ✅ Ensure Content-Type is allowed
 
     'exposed_headers' => ['Authorization'], // ✅ Expose Authorization headers if needed
 
