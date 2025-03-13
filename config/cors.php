@@ -8,24 +8,24 @@ return [
     |--------------------------------------------------------------------------
     |
     | This configuration determines what cross-origin operations may execute
-    | in web browsers. You can adjust these settings as needed for security.
+    | in web browsers. Adjust these settings as needed for security.
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'], // Defines where CORS applies
+    'paths' => ['api/*', 'sanctum/csrf-cookie'], // Apply CORS to all API endpoints
 
-    'allowed_methods' => ['*'], // Allow all HTTP methods (GET, POST, PUT, DELETE, etc.)
+    'allowed_methods' => ['*'], // Allow all HTTP methods (GET, POST, PUT, DELETE, OPTIONS)
 
-    'allowed_origins' => ['https://pasabayan.com', 'https://www.pasabayan.com'], // Replace with your frontend domain
+    'allowed_origins' => ['https://pasabayan.com', 'https://www.pasabayan.com'], // Allow frontend domain
 
-    'allowed_origins_patterns' => [], // Wildcard patterns for allowed origins
+    'allowed_origins_patterns' => [],
 
-    'allowed_headers' => ['*'], // Allow all headers
+    'allowed_headers' => ['Content-Type', 'X-Requested-With', 'Authorization', 'Accept', 'Origin'], // ✅ Ensure Content-Type is allowed
 
-    'exposed_headers' => [], // Headers that can be exposed
+    'exposed_headers' => ['Authorization'], // ✅ Expose Authorization headers if needed
 
-    'max_age' => 0, // Caching time for preflight requests
+    'max_age' => 0,
 
-    'supports_credentials' => false, // Set to true if using cookies or authentication tokens
+    'supports_credentials' => true, // ✅ Set to true if using authentication cookies
 
 ];
